@@ -1,0 +1,8 @@
+name: gitactions-demo-test
+on: deployment_status
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: demo message
+        run: echo "hi github actions"
