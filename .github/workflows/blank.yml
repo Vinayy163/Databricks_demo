@@ -6,3 +6,8 @@ jobs:
     steps:
       - name: demo message
         run: echo "hi github actions"
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: secret demo
+        run: echo ${{secrets.DB_PASSWORD}}
